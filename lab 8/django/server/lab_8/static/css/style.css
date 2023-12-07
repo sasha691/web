@@ -1,0 +1,20 @@
+table, th, td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.offBtn{
+    color: black;
+}
+
+.onBtn{
+    color: red;
+}
