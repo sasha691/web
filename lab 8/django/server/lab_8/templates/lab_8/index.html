@@ -39,4 +39,34 @@
         </tbody>
     </table>
     <div id="blockBtn"></div>
+    <div class="myForm">
+        <form action="http://127.0.0.1:8000/server/" method="post">
+            {% csrf_token %}
+            <input type="text" name="name">
+            <input type="text" name="title">
+            <select name="race" id="">
+                <option value="1">HOBBIT</option>
+                <option value="2">TROLL</option>
+                <option value="3">ORC</option>
+                <option value="4">GIANT</option>
+                <option value="5">ELF</option>
+                <option value="6">DWARF</option>
+                <option value="7">HUMAN</option>
+            </select>
+            <select name="profession" id="">
+                <option value="1">DRUID</option>
+                <option value="2">NAZGUL</option>
+                <option value="3">WARLOCK</option>
+                <option value="4">PALADIN</option>
+                <option value="5">CLERIC</option>
+                <option value="6">SORCERER</option>
+                <option value="7">ROGUE</option>
+                <option value="8">WARRIOR</option>
+            </select>
+            <input type="number" name="level">
+            <input type="date" name="birthday" id="">
+            <input type="checkbox" name="banned">
+            <input type="submit">
+        </form>
+    </div>
 {% endblock %}
